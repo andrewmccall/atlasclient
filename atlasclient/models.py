@@ -446,7 +446,7 @@ class TypeDefHeader(base.QueryableModel):
     path = 'types/typedefs/headers'
     data_key = 'typedefs_headers'
     primary_key = 'guid'
-    fields = ('guid', 'name', 'category')
+    fields = ('guid', 'name', 'category', 'serviceType')
 
 
 class TypeDefs(base.QueryableModelCollection):
