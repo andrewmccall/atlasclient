@@ -744,7 +744,7 @@ class RelationshipCollection(base.QueryableModelCollection):
 class Relationship(base.QueryableModel):
     collection_class = RelationshipCollection
     path = 'relationship'
-    data_key = 'relationship'
+    data_key = ''
     primary_key = 'guid'
     fields = ('guid', 'status', 'createdBy',
               'updatedBy', 'createTime', 'updateTime',
